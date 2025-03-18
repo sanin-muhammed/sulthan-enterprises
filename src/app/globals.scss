@@ -1,17 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap");
-@import "@/styles/_colors.scss";
+@use "@/styles/colors" as *;
 
 :root {
   --background: #ffffff;
   --foreground: #000000;
 }
-/* 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
+
 
 html,
 body {
@@ -39,7 +32,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  font-family: "Big Shoulders Stencil", sans-serif;
+  font-family: var(--font-big-shoulders-stencil);
   color: #FFF;
   .logo_div {
     white-space: nowrap;
