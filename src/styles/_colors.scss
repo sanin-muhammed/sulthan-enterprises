@@ -1,0 +1,27 @@
+// Primary Brand Colors
+$primary-green: #4CAF50;   // Fresh, healthy green
+$secondary-green: #81C784; // Soft green accent
+
+// Call-to-Action Colors
+$primary-orange: #FF9800;  // Energetic, attention-grabbing
+$secondary-yellow: #FFEB3B; // Highlight / discount color
+
+// Trust & Links
+$trust-blue: #1976D2; // For links, footer, and info sections
+
+// Grays & Neutrals
+$dark-gray: #333333;  // Primary text
+$light-gray: #F5F5F5; // Backgrounds
+$border-gray: #e0e0e0; // Light borders
+
+// Status Colors
+$error-red: #E53935;  // For errors / alerts
+$success-green: #43A047; // For success notifications
+
+// Utility Colors
+$white: #ffffff;
+$black: #000000;
+
+// Optional gradients
+$green-gradient: linear-gradient(135deg, $primary-green 0%, $secondary-green 100%);
+$orange-gradient: linear-gradient(135deg, $primary-orange 0%, $secondary-yellow 100%);
