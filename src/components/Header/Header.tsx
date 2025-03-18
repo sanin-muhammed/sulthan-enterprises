@@ -1,5 +1,4 @@
 import React from "react";
-import { FaShoppingCart } from "react-icons/fa";
 import { FiHeart, FiShoppingCart, FiUser } from "react-icons/fi";
 
 const Header = () => {

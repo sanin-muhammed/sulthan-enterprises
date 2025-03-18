@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import styles from "./page.module.scss";
 import BannerSwiper from "@/components/Swiper/BannerSwiper";
 

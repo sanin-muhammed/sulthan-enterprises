@@ -20,7 +20,10 @@ export default function BannerSwiper({ images }: Props) {
       >
         {images?.length &&
           images?.map((image: any, index: any) => (
-            <SwiperSlide className="image_div">
+            <SwiperSlide
+              key={index}
+              className="image_div"
+            >
               <img
                 src={image}
                 alt={`banner ${index}`}
