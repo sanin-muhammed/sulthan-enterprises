@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -24,7 +25,8 @@ export default function BannerSwiper({ images }: Props) {
               key={index}
               className="image_div"
             >
-              <img
+              <Image
+                fill
                 src={image}
                 alt={`banner ${index}`}
               />
