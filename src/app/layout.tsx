@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Big_Shoulders_Stencil_Text } from "next/font/google";
-import Header from "@/components/Header/Header";
 import "./globals.scss";
-import Footer from "@/components/Footer/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,9 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} ${bigShouldersStencil.variable}`}>
-        {/* {pathname !== "/" && <Header />} */}
         {children}
-        {/* {pathname !== "/" && <Footer />} */}
       </body>
     </html>
   );
