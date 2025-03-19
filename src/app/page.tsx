@@ -1,19 +1,26 @@
-import ProductsList from "@/components/Products/ProductsList";
-import BannerSwiper from "@/components/Swiper/BannerSwiper";
+"use client";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import React from "react";
 
-
-export default function Home() {
-  const bannerImages = [
-    "/images/banner/bannerImage_1.webp",
-    "/images/banner/bannerImage_2.webp",
-    "/images/banner/bannerImage_3.webp",
-    "/images/banner/bannerImage_4.webp",
-  ];
-
+const Splash = () => {
+  const router = useRouter();
   return (
-    <div className="page_container">
-      <BannerSwiper images={bannerImages} />
-      <ProductsList/>
+    <div
+      className="splash_page"
+      onClick={() => router.push("/home")}
+    >
+      <div className="splash_img_div">
+        <Image
+          fill
+          src="/images/sulthan_enterprise_logo_2.png"
+          className="splash_img"
+          objectFit="contain"
+          alt="logo"
+        />
+      </div>
     </div>
   );
-}
+};
+
+export default Splash;

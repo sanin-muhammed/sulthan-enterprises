@@ -30,12 +30,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // const pathname = usePathname();
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} ${bigShouldersStencil.variable}`}>
-        <Header />
+        {/* {pathname !== "/" && <Header />} */}
         {children}
-        <Footer/>
+        {/* {pathname !== "/" && <Footer />} */}
       </body>
     </html>
   );
