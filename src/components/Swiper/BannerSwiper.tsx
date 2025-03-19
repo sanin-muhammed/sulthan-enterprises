@@ -17,23 +17,17 @@ export default function BannerSwiper({ images }: Props) {
       className="banner_image_swiper"
     >
       {images?.map((image: string, index: number) => (
-        <SwiperSlide key={index} className="image_div">
-          {/* <div
-            style={{
-              position: "relative",
-              width: "100%",
-              height: "400px",
-              borderRadius: "20px",
-              overflow: "hidden",
-            }}
-          > */}
-            <Image
-              src={image}
-              alt={`banner ${index}`}
-              fill
-              style={{ objectFit: "cover" }}
-            />
-          {/* </div> */}
+        <SwiperSlide
+          key={index}
+          className="image_div"
+        >
+         
+          <Image
+            src={image}
+            alt={`banner ${index}`}
+            fill
+            style={{ objectFit: "cover" }}
+          />
         </SwiperSlide>
       ))}
     </Swiper>

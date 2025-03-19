@@ -1,6 +1,6 @@
-
-import styles from "./page.module.scss";
+import ProductsList from "@/components/Products/ProductsList";
 import BannerSwiper from "@/components/Swiper/BannerSwiper";
+
 
 export default function Home() {
   const bannerImages = [
@@ -11,8 +11,9 @@ export default function Home() {
   ];
 
   return (
-    <div className={styles.page_container}>
+    <div className="page_container">
       <BannerSwiper images={bannerImages} />
+      <ProductsList/>
     </div>
   );
 }
